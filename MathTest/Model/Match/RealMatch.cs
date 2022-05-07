@@ -17,7 +17,7 @@ namespace MathTest.Model.Match
 			: base(goalsQuery.Count( g => g == GoalType.Home),
 				  goalsQuery.Count(g => g == GoalType.Visit))
 		{
-			if(minuntesToEnd < 0 || minuntesToEnd >= 90)
+			if(minuntesToEnd < 0 || minuntesToEnd > 90)
 			{
 				throw new ArgumentException("Incorrect time to match end");
 			}

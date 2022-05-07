@@ -11,7 +11,7 @@ namespace MathTest
 		{
 			var mathModel = new MathModel();
 
-			var res = mathModel.CalculateValue(new RealMatch(RealMatch.ParseResultFromStr("Х,Х,Г"), 60), new GoalsRange("[2 .. 5]"));
+			var res = mathModel.CalculateValue(new RealMatch(RealMatch.ParseResultFromStr("Х"), 90), new GoalsRange("[2 .. 5]"));
 		}
 
 		

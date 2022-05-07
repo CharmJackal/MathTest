@@ -46,7 +46,7 @@ namespace MathTest.Model.Match
 				return null;
 			}
 
-			int localStart = Start < currentGoalsQuery.Count
+			int localStart = Start > currentGoalsQuery.Count
 				? currentGoalsQuery.Count
 				: Start;
 
